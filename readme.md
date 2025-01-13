@@ -2,6 +2,8 @@
 ## Dish-Genie: AI Recipe Generator (Full-Stack)
 This project is a full-stack application that allows users to input a list of ingredients, and the server generates a recipe using Hugging Face's Inference API. It consists of a front-end built with **React.js + Vite** and a back-end with **Node.js/Express.js** to handle API requests.
 
+**Hugging Face Model Info**: https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1
+
 
 ## Setup Instructions
 *- Prerequisites*

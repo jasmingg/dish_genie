@@ -90,7 +90,7 @@ export default function Main(props) {
                     removeButtonOptions={removeButtonOptions}
                     clearRecipe={clearRecipe}
                 />
-                : <p className="emptyIngredients">Add at least 4 ingredients to get started with a recipe 
+                : <p className="emptyIngredients">Add at least 3 ingredients to get started with a recipe 
                     *ੈ𑁍༘⋆°❀⋆.ೃ࿔*:･ ݁</p>
             }
 

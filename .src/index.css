@@ -158,3 +158,57 @@ l-infinity {
 .addButton:hover {
     opacity: .7;
 }
+
+.info-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the content horizontally */
+    background: #555f6d;
+    color: #ffffff;
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Inter, sans-serif;
+    position: relative; /* To position the close button */
+  }
+  
+  .info-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center; /* Ensures text aligns neatly */
+  }
+  
+  .info-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .info-banner p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .info-banner a {
+    color: white;
+    margin-left: 5px;
+  }
+  
+  .close-banner {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Places the close button in the top-right corner */
+    transition: transform 0.2s ease;
+  }
+  
+  .close-banner:hover {
+    transform: scale(1.2);
+  }
+  

@@ -9,7 +9,7 @@ const IngredientsList = forwardRef((props, ref) =>  {
         <section>
             <h2>Ingredients on hand:</h2>
             <ul className="ingredients-list" aria-live="polite">{ingredientsListItems}</ul>
-            {props.ingredients.length > 3 && <div className="get-recipe-container">
+            {props.ingredients.length >= 3 && <div className="get-recipe-container">
                 <div ref={props.refRecipeButton}>
                     <h3>Ready for a recipe?</h3>
                     <p>Generate a recipe from your list of ingredients.</p>
