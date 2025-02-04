@@ -24,22 +24,21 @@ export default function Main(props) {
         , [recipe]
         )
 
-    const getRecipe = async () => {
-        setLoading(true)
-        try {
-                const response = await axios.post('http://localhost:5000/generate-recipe', {
-                ingredientsArr: ingredients
-                    })
-                setRecipe(response.data.recipe) // Set the recipe from server response
+        const getRecipe = async () => {
+            setLoading(true);
+            try {
+                const response = await axios.post('/.netlify/functions/generate-recipe', {
+                    ingredientsArr: ingredients
+                });
+                setRecipe(response.data.recipe); // Set the recipe from server response
+            } catch (error) {
+                console.error(`Error fetching recipe: ${error}`);
+                setRecipe('Error fetching recipe.');
             }
-
-        catch (error) {
-              console.error(`Error fetching recipe: ${error}`)
-              setRecipe('Error fetching recipe.');
-            }
-        setLoading(false)
-        clearRecipe()
-        }
+            setLoading(false);
+            clearRecipe();
+        };
+        
 
     
     function addIngredient(event) {
